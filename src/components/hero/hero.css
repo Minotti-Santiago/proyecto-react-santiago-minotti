@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.max-content{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+
+.hero-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    gap: 50px;
+}
+
+.hero-img{
+    background: url('../../images/principal-image.jpg');
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+
+
+.hero-title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000b3;
+    margin: 0;
+}
+
+.hero-search input{
+    width: 500px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: #000;
+    padding-left: 20px;
+    font-size: 1.05rem;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" stroke="black" stroke-width="2" fill="none"/></svg>');
+    background-size: contain;
+    cursor: pointer;
+    }
