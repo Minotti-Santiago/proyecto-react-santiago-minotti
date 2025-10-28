@@ -1,0 +1,162 @@
+[
+{
+    "id": 1,
+    "title": "Mouse Primus Gladius 4000T",
+    "description": "Mouse gamer ergonómico con sensor óptico de alta precisión y hasta 4000 DPI. Ideal para juegos FPS.",
+    "price": 30000,
+    "image": "/images/gladius 4000T.jpg",
+    "category": "mouse"
+},
+{
+    "id": 2,
+    "title": "Mouse Razer Deathadder Elite Gaming",
+    "description": "Mouse de alto rendimiento con sensor de 16000 DPI, diseño clásico de Razer y switches mecánicos duraderos.",
+    "price": 1,
+    "image": "/images/razer deathadder elite gaming.jpg",
+    "category": "mouse"
+},
+{
+    "id": 3,
+    "title": "Mouse Primus Gladius 8200T",
+    "description": "Mouse profesional con sensor óptico ajustable hasta 8200 DPI, iluminación RGB y diseño ambidiestro.",
+    "price": 45500,
+    "image": "/images/gladius 8200T.jpg",
+    "category": "mouse"
+},
+{
+    "id": 4,
+    "title": "Mouse Logitech G203",
+    "description": "Mouse RGB compacto con sensor de 8000 DPI, seis botones programables y excelente relación calidad-precio.",
+    "price": 100000,
+    "image": "/images/logitech g203.jpeg",
+    "category": "mouse"
+},
+{
+    "id": 5,
+    "title": "Mouse Logitech GPro",
+    "description": "Mouse inalámbrico de competición con sensor HERO de 12000 DPI y diseño ultraligero para máxima precisión.",
+    "price": 140000,
+    "image": "/images/logitech gpro.jpg",
+    "category": "mouse"
+},
+{
+    "id": 6,
+    "title": "Mouse Razer Basilisk V3",
+    "description": "Mouse gamer premium con sensor de 26000 DPI, rueda de desplazamiento personalizable y efectos RGB Chroma.",
+    "price": 150,
+    "image": "/images/razer basilisk V3.jpeg",
+    "category": "mouse"
+},
+{
+    "id": 7,
+    "title": "Mouse Redragon M607",
+    "description": "Mouse gamer con sensor óptico de hasta 7200 DPI, retroiluminación RGB y diseño ergonómico para largas sesiones.",
+    "price": 67070,
+    "image": "/images/redragon m607.jpeg",
+    "category": "mouse"
+},
+{
+    "id": 8,
+    "title": "Mousepad Approx Frontline xl Negro",
+    "description": "Alfombrilla de gran tamaño con superficie textil antideslizante para un control suave y preciso.",
+    "price": 10000,
+    "image": "/images/approx frontline xl negro.jpg",
+    "category": "mousepad"
+},
+{
+    "id": 9,
+    "title": "Mousepad Gengar MGMGAMERS",
+    "description": "Mousepad gamer con diseño de Gengar, base antideslizante y superficie optimizada para sensores ópticos y láser.",
+    "price": 40700,
+    "image": "/images/gengar MGMGAMERS.jpg",
+    "category": "mousepad"
+},
+{
+    "id": 10,
+    "title": "Mousepad Q-connect con almohadilla en Gel",
+    "description": "Mousepad ergonómico con soporte de gel para la muñeca, ideal para trabajo de oficina o uso prolongado.",
+    "price": 5000,
+    "image": "/images/q-connect con almohadilla en gel.jpg",
+    "category": "mousepad"
+},
+{
+    "id": 11,
+    "title": "Mousepad Razer Atlas de Vidrio",
+    "description": "Superficie de vidrio templado con textura micrograbada para precisión extrema y durabilidad premium.",
+    "price": 136999,
+    "image": "/images/razer atlas vidrio.jpg",
+    "category": "mousepad"
+},
+{
+    "id": 12,
+    "title": "Mousepad Razer Firefly V2",
+    "description": "Mousepad RGB con iluminación en los bordes, superficie microtexturizada y base antideslizante.",
+    "price": 77777,
+    "image": "/images/razer firefly V2.jpeg",
+    "category": "mousepad"
+},
+{
+    "id": 13,
+    "title": "Mousepad XI GTC pad-013d",
+    "description": "Mousepad de gran tamaño con superficie de tela resistente y base de goma antideslizante.",
+    "price": 240000,
+    "image": "/images/XI Gtc pad-013d.jpeg",
+    "category": "mousepad"
+},
+{
+    "id": 14,
+    "title": "Teclado Hyperx Alloy core",
+    "description": "Teclado gamer con retroiluminación RGB, estructura reforzada y teclas silenciosas de membrana.",
+    "price": 100000,
+    "image": "/images/hyperx alloy core.jpeg",
+    "category": "teclado"
+},
+{
+    "id": 15,
+    "title": "Teclado Hyperx Alloy Origins 60",
+    "description": "Teclado mecánico compacto 60% con switches HyperX Red, ideal para espacios reducidos y gaming competitivo.",
+    "price": 350000,
+    "image": "/images/hyperx alloy origins 60.jpeg",
+    "category": "teclado"
+},
+{
+    "id": 16,
+    "title": "Teclado Logitech BT 920-010243",
+    "description": "Teclado inalámbrico Bluetooth compacto, ideal para oficinas o setups minimalistas.",
+    "price": 50000,
+    "image": "/images/logitech BT 920-010243.webp",
+    "category": "teclado"
+},
+{
+    "id": 17,
+    "title": "Teclado Logitech GPro Mecanich",
+    "description": "Teclado mecánico profesional con switches táctiles y diseño tenkeyless para eSports.",
+    "price": 299999,
+    "image": "/images/logitech g pro mecanich.jpeg",
+    "category": "teclado"
+},
+{
+    "id": 18,
+    "title": "Teclado Logitech G413",
+    "description": "Teclado mecánico con chasis de aluminio cepillado, retroiluminación roja y gran durabilidad.",
+    "price": 80500,
+    "image": "/images/logitech g413.png",
+    "category": "teclado"
+},
+{
+    "id": 19,
+    "title": "Teclado Logitech K120",
+    "description": "Teclado de oficina resistente con diseño clásico y teclas silenciosas de respuesta rápida.",
+    "price": 300000,
+    "image": "/images/logitech k120.jpeg",
+    "category": "teclado"
+},
+{
+    "id": 20,
+    "title": "Teclado Redragon Azure K652GG",
+    "description": "Teclado mecánico inalámbrico RGB compacto, ideal para gaming y uso diario.",
+    "price": 500,
+    "image": "/images/redragon azure k652GG.png",
+    "category": "teclado"
+}
+]

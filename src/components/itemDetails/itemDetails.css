@@ -1,0 +1,36 @@
+.item-details{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    margin: 100px 0;
+}
+
+.img-details{
+    width: 700px;
+    height: 500px;
+}
+
+.info-details{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.info-details h1{
+    font-size: 2rem;
+    color: #000;
+}
+
+.btn-carrito-details{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 5px;
+}

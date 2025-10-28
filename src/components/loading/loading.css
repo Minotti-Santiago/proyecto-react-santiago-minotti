@@ -1,0 +1,17 @@
+.loading {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 10000000;
+    background-color: #ffffff;
+}
+
+.loading h1{
+    font-size: 5rem;
+    color: #000000;
+}

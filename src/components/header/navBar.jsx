@@ -1,6 +1,7 @@
 import './navBar.css'
 import logo from '../../images/SM-isologo.png'
 import CartWidget from '../cart-widget/cartWidget'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
 
@@ -9,19 +10,21 @@ return (
     <header className="header">
         <div className="max-content">
             <div className="logo-container">
-                <img src={logo} alt="logo de la marca" />
+                <Link to="/">
+                    <img src={logo} alt="logo de la marca" />
+                </Link>
             </div>
 
             <nav className="nav-container">
                 <ul>
                     <li>                        
-                        <a href="#">Teclados</a>
+                        <Link className='header-link' to="/category/teclado">Teclados</Link>
                     </li>
                     <li>                        
-                        <a href="#">Mouses</a>  
+                        <Link className='header-link' to="/category/mouse">Mouses</Link>  
                     </li>
                     <li>                        
-                        <a href="#">MousePads</a>
+                        <Link className='header-link' to="/category/mousepad">MousePads</Link>
                     </li>
                 </ul>
             </nav>

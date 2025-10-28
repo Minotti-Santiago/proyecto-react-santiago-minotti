@@ -5,6 +5,10 @@
     color: #fff;
 }
 
+.cart-widget-text{
+    color: #fff;
+}
+
 .cart-widget{
     display: flex;
     align-items: center;
