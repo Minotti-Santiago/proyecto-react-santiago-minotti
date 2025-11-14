@@ -1,0 +1,38 @@
+.cart-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 20px 20px;
+    position: relative;
+
+}
+
+.cart-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+.total-price{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 40px;
+}
+
+.empty-cart{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    
+}

@@ -6,12 +6,13 @@
 }
 
 .header{
-    background-color: #141a3a;
+    background-color: #000;
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 .max-content{

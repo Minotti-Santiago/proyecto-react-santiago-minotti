@@ -3,8 +3,8 @@
     flex-direction: column;
     gap: 10px;
     width: 300px;
-    height: 400px;
-    border: 1px solid black;
+    height: 500px;
+    box-shadow:  0 0 5px #0006;
     border-radius: 20px;
     padding: 20px;
     justify-content: space-between;
@@ -18,12 +18,18 @@
 .info-card-container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 
 .item-link{
-    color: black;
     font-weight: bold;
+    text-decoration: none;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    justify-content: center;
 }
 
 img{

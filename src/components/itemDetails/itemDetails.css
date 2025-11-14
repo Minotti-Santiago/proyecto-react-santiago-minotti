@@ -22,15 +22,5 @@
 
 .info-details h1{
     font-size: 2rem;
-    color: #000;
 }
 
-.btn-carrito-details{
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    width: fit-content;
-    border-radius: 5px;
-}

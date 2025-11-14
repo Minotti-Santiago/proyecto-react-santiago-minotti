@@ -12,10 +12,6 @@ const Banner = () => {
                     <h1>TecnoTecnología</h1>
                 </div>
 
-                <div className="hero-search">
-                    <input type="search" placeholder='Que producto deseas buscas? ' />
-                </div>
-
         </section>
     )
 }

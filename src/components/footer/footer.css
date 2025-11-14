@@ -12,7 +12,8 @@ footer{
     align-items: center;
     justify-content: center;
     height: fit-content;
-    background: #283476;
+    background: #fff;
+    color: #000;
 }
 
 .max-content{
@@ -25,7 +26,7 @@ footer{
 
 .social-media{
     width: 50px;
-    fill: white;
+    fill: #000;
     cursor: pointer;
 }
 
@@ -36,9 +37,6 @@ footer{
     align-items: center;
 }
 
-.social-media:hover{
-    fill: #000;
-    transition: all 0.3s ease-in-out;
+.rights-container p, .developer-container p{
+    color: #000;
 }
-
-
