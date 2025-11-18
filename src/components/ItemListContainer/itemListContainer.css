@@ -1,6 +1,6 @@
 .itemContainer{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: 100%;
     margin: 100px 0;

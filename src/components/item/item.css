@@ -8,6 +8,7 @@
     border-radius: 20px;
     padding: 20px;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 .img-card-container{
@@ -25,9 +26,9 @@
     font-weight: bold;
     text-decoration: none;
     padding: 20px 40px;
-    background-color: #fff;
+    background-color: #141a3a;
     border-radius: 10px;
-    color: #000;
+    color: #fff;
     display: flex;
     justify-content: center;
 }
@@ -35,4 +36,8 @@
 img{
     width: 200px;
     height: 150px;
+}
+
+.item p{
+    color: #000;
 }
