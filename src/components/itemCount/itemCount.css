@@ -13,11 +13,20 @@ button{
     justify-content: center;
     align-items: center;
     background: #fff;
+<<<<<<< HEAD
     font-size: 40px;
     border-radius: 5px;
     color: #141a3a;
     border: none;
     cursor: pointer;
+=======
+    color: #141a3a;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+>>>>>>> 7041a4d4ebbc1c06b4a9c2ca258bdf6f4ff32a63
 }
 
 .count-container{
@@ -34,8 +43,16 @@ button{
     cursor: pointer;
     width: fit-content;
     border-radius: 5px;
+<<<<<<< HEAD
     transition: .2s all;
 }
 .btn-carrito-details:hover, button:hover {
     background-color: #b6b6b6;
+=======
+    transition: all .1s ease-in-out;
+}
+.btn-carrito-details:hover, button:hover {
+    background-color: #000;
+    color: #fff;
+>>>>>>> 7041a4d4ebbc1c06b4a9c2ca258bdf6f4ff32a63
 }

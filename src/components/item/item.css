@@ -8,7 +8,11 @@
     border-radius: 20px;
     padding: 20px;
     justify-content: space-between;
+<<<<<<< HEAD
     background: #fff;
+=======
+    background-color: #fff;
+>>>>>>> 7041a4d4ebbc1c06b4a9c2ca258bdf6f4ff32a63
 }
 
 .img-card-container{
@@ -38,6 +42,10 @@ img{
     height: 150px;
 }
 
+<<<<<<< HEAD
 .item p, .item h2{
+=======
+.item p{
+>>>>>>> 7041a4d4ebbc1c06b4a9c2ca258bdf6f4ff32a63
     color: #000;
 }
