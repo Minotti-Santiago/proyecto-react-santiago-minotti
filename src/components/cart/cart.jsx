@@ -43,13 +43,6 @@ const Cart = () => {
                     <Link to="/checkout" className="btn-continue">Continuar con la compra</Link>
                     <button className="total-price" onClick={ () => deleteAllProducts() }>Eliminar todo</button>
                 </div>
-
-            <div className="cart-info-final">
-                <h2 className="total-price">precio Total: { totalPrice() } </h2>
-                    <button>Continuar con la compra</button>
-                    <button className="total-price" onClick={ () => deleteAllProducts() }>Eliminar todo</button>
-            </div>
-
                     
         </div>
     )

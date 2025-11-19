@@ -19,7 +19,13 @@ const ItemListContainer = () => {
                 return{ id: productDb.id, ...productDb.data() }
 
             })
-            setProducts(data)
+            // Deduplicate products by title (in case the collection contains repeated documents)
+            const map = new Map()
+            data.forEach(p => {
+                if (!map.has(p.title)) map.set(p.title, p)
+            })
+            const unique = Array.from(map.values())
+            setProducts(unique)
             console.log(data)
         } catch (error) {
             console.log(error)
@@ -39,7 +45,13 @@ const ItemListContainer = () => {
 
             })
 
-            setProducts(data)
+            // Deduplicate products by title when filtering by category
+            const map = new Map()
+            data.forEach(p => {
+                if (!map.has(p.title)) map.set(p.title, p)
+            })
+            const unique = Array.from(map.values())
+            setProducts(unique)
         } catch (error) {
             console.log(error)
         }finally{
