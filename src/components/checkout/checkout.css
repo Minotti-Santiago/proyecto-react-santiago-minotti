@@ -1,0 +1,21 @@
+.order-container{
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-container h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.order-container p{
+    font-size: 1.6rem;
+}
+
+.order-id{
+    font-weight: 700;
+}

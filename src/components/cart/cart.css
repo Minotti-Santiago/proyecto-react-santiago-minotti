@@ -7,13 +7,19 @@
 
 }
 
-.cart-info-container{
+.cart-info-container, .cart-info-container-2{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    margin: 40px auto;
 }
 
-button{
+.cart-info-container-2{
+    align-items: center;
+}
+
+button {
     width: fit-content;
     padding: 10px 20px;
     font-size: 1.5rem;
@@ -22,7 +28,6 @@ button{
 .total-price{
     font-weight: bold;
     font-size: 2.5rem;
-    margin: 40px;
 }
 
 .empty-cart{
@@ -35,4 +40,25 @@ button{
     flex-direction: column;
     align-items: center;
     
+}
+
+.btn-continue{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background: #fff;
+    color: #141a3a;
+}
+
+.btn-continue:hover{
+    background: #b6b6b6;
+    color: #141a3a;
+}
+
+.cart-info-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin: 40px auto;
 }

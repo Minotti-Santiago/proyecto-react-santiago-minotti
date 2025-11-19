@@ -1,36 +1,60 @@
 import './itemListContainer.css'
-import getProducts from '../../data/products.js'
 import { useState, useEffect } from 'react'
 import ItemList from '../itemList/itemList'
-import { useParams } from 'react-router-dom'
+import { data, useParams } from 'react-router-dom'
 import Loading from '../loading/Loading'
+import { collection, getDocs, query, where } from "firebase/firestore"
+import db from '../../db/db'
 
 const ItemListContainer = () => {
     const { category } = useParams()
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
+    const productsRef = collection ( db, "products")
+
+    const getProducts = async() => {
+        try {
+            const dataDb = await getDocs( productsRef )
+            const data = dataDb.docs.map( (productDb) => {
+                return{ id: productDb.id, ...productDb.data() }
+
+            })
+            setProducts(data)
+            console.log(data)
+        } catch (error) {
+            console.log(error)
+        }finally{
+            setLoading(false)
+        }
+
+
+    }
+
+    const getProductByCategory = async() => {
+        try {
+            const q = query( productsRef, where( "category", "==", category ) )
+            const dataDb = await getDocs(q)
+            const data = dataDb.docs.map( (productDb) => {
+                return{ id: productDb.id, ...productDb.data() }
+
+            })
+
+            setProducts(data)
+        } catch (error) {
+            console.log(error)
+        }finally{
+            setLoading(false)
+        }
+    }
 
     useEffect(() => {
+        if(category){
+            getProductByCategory()
 
-        setLoading(true)
-
-        getProducts().then((data) => {
-            if(category){
-                const productsFilter = data.filter((product) => product.category === category)
-                setProducts(productsFilter)
-            }else{
-                setProducts(data)
-            }
-            
-        })
-        .catch((error) => {
-            console.log(error)
-        })
-        .finally(() => {
-            setLoading(false)
-        })
-        
-    }, [category])
+        }else{
+            getProducts()
+        }
+    },[category])
     
     return(
         <div className='itemContainer'>

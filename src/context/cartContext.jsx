@@ -1,15 +1,27 @@
-import { useState, createContext } from 'react'
+import { useState, createContext, useEffect } from 'react'
 
 const CartContext = createContext()
 
 
 const CartProvider = ({ children }) => {
+    const localStorageCart = JSON.parse( localStorage.getItem("cart-ecommerce") )
+    const [ cart, setCart ] = useState(localStorageCart ? localStorageCart : [] )
 
-    const [ cart, setCart ] = useState([])
-
+    useEffect(() => {
+        localStorage.setItem("cart-ecommerce", JSON.stringify(cart))
+    },[cart])
 
     const addProduct = (newProduct) => {
-        setCart( [...cart, newProduct ] )
+        const indexProduct = cart.findIndex( ( productCart ) => productCart.id === newProduct.id )
+
+        if( indexProduct === -1){
+            setCart( [...cart, newProduct ] )
+        }else{
+            const newCart = [ ...cart ]
+            newCart[indexProduct].quantity = newCart[indexProduct].quantity + newProduct.quantity
+            setCart(newCart)
+        }
+
     }
 
     const totalProducts = () => {
