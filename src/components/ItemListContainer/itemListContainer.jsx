@@ -4,7 +4,6 @@ import ItemList from '../itemList/itemList'
 import { data, useParams } from 'react-router-dom'
 import { collection, getDocs, query, where } from "firebase/firestore"
 import db from '../../db/db'
-import Loading from '../loading/Loading'
 
 const ItemListContainer = () => {
     const { category } = useParams()
@@ -69,7 +68,7 @@ const ItemListContainer = () => {
     
     return(
         <div className='itemContainer'>
-            {loading ? <Loading /> : <ItemList products={products} />}
+        <ItemList products={products} />
         </div>
     )
     
