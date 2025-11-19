@@ -1,7 +1,7 @@
 import './itemListContainer.css'
 import { useState, useEffect } from 'react'
 import ItemList from '../itemList/itemList'
-import { data, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { collection, getDocs, query, where } from "firebase/firestore"
 import db from '../../db/db'
 
@@ -39,7 +39,7 @@ const ItemListContainer = () => {
                 return{ id: productDb.id, ...productDb.data() }
 
             })
-            
+
             const map = new Map()
             data.forEach(p => {
                 if (!map.has(p.title)) map.set(p.title, p)
