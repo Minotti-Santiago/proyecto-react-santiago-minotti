@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react"
-import getProducts from "../../data/products.js"
 import ItemDetails from "../itemDetails/itemDetails"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import Loading from "../loading/loading"
 import { doc, getDoc } from "firebase/firestore"
 import db from "../../db/db.js"
+import './itemDetailsContainer.css'
 
 const ItemDetailsContainer = () => {
-    const [product, setProduct] = useState ({})
+    const [product, setProduct] = useState (null)
     const [loading, setLoading] = useState (true)
     const { id } = useParams()
 
@@ -15,9 +15,14 @@ const ItemDetailsContainer = () => {
         try {
             const productRef = doc(db, "products", id)
             const dataDb = await getDoc(productRef)
-            const data = { id: dataDb.id, ...dataDb.data() }
 
-        setProduct(data)
+            if (!dataDb.exists()) {
+                // mark as not found
+                setProduct(null)
+            } else {
+                const data = { id: dataDb.id, ...dataDb.data() }
+                setProduct(data)
+            }
         } catch (error) {
             console.log(error)
         }
@@ -32,7 +37,15 @@ const ItemDetailsContainer = () => {
 
     return (
         <div>
-        {loading ? <Loading /> : <ItemDetails product={product} />}
+            {loading && <Loading />}
+            {!loading && product === null && (
+                <div className="not-found">
+                    <h2>Producto no encontrado</h2>
+                    <p>El producto que buscaste no existe.</p>  
+                    <Link className="btn-volver" to="/">Volver al inicio</Link>
+                </div>
+            )}
+            {!loading && product && <ItemDetails product={product} />}
         </div>
     )
 }
