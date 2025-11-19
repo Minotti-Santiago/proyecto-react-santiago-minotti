@@ -8,7 +8,6 @@ import db from '../../db/db'
 const ItemListContainer = () => {
     const { category } = useParams()
     const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState(true)
     const productsRef = collection ( db, "products")
 
     const getProducts = async() => {
@@ -27,8 +26,6 @@ const ItemListContainer = () => {
             console.log(data)
         } catch (error) {
             console.log(error)
-        }finally{
-            setLoading(false)
         }
 
 
@@ -42,8 +39,7 @@ const ItemListContainer = () => {
                 return{ id: productDb.id, ...productDb.data() }
 
             })
-
-            // Deduplicate products by title when filtering by category
+            
             const map = new Map()
             data.forEach(p => {
                 if (!map.has(p.title)) map.set(p.title, p)
@@ -52,8 +48,6 @@ const ItemListContainer = () => {
             setProducts(unique)
         } catch (error) {
             console.log(error)
-        }finally{
-            setLoading(false)
         }
     }
 
